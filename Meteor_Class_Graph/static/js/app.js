@@ -1,22 +1,84 @@
 //path to the data
 dataLocation = "static/data/Clean_Meteor_Class_Data.csv"
 
+margin = {
+	left: 30,
+	right:10,
+	top: 10,
+	bottom: 30
+}
+
+svgWidth = 600;
+svgHeight = 375; // *** edit to be adjustable to screen size
+
+chartWidth = svgWidth - margin.left - margin.right;
+chartHeight = svgHeight - margin.top - margin.bottom;
+
 svgGroup = d3.select("#graph")
 	.append("svg")
-	.attr("width", 600)
-	.attr("height", 375);
+	.attr("width", svgWidth)
+	.attr("height", svgHeight);
 
 chartGroup = svgGroup.append("g")
-	.attr("transform", "translate(0,0)");
+	.attr("transform", `translate(${margin.left}, ${margin.top})`);
 
 
 function graph(error) {
 	//extract the data from the CSV
 	if (error) throw error;
-	d3.csv(dataLocation, function(data) {
-		console.log(data[0]);
+	d3.csv(dataLocation, function (data) {
+		console.log(data);
 
-		
+		// get the height and width of the graph
+		var scaleHeight = d3.scaleLinear()
+			.domain([0, d3.max(data, function (d) {
+				return d.count_of_class; // ******* this is going to need to be changed to fit wit the item info below
+			})])
+			.range([chartHeight, 0]);
+
+
+		/* #region  count the number of items in the selected tier */
+		var items = [];
+
+		current = null;
+		count = 0;
+		subValues = [];
+
+		data.forEach(d => {
+			items.push(d.class_tier_3); // ****** this is going to need to be changed to accecpt variable class tiers
+		});
+
+		items = items.sort();
+
+		items.forEach(item => {
+			if (item != current) {
+				count += 1;
+				current = item;
+				subValues.push(item);
+			}
+		});
+		/* #endregion */
+
+		var scaleWidth = d3.scaleLinear()
+			.range([0, chartWidth]);
+
+		var xAxis = d3.axisBottom(scaleWidth)
+			.ticks(subValues.forEach(s => {
+				return s;
+			}))
+			.tickFormat(function(d) {
+				return subValues[d % 16];
+			});
+		var yAxis = d3.axisLeft(scaleHeight)
+			.tickSize(chartWidth);
+
+		chartGroup.append("g")
+			.attr("transform", `translate(0, ${chartHeight})`)
+			.call(xAxis);
+
+		chartGroup.append("g")
+			.attr("transform", `translate(${chartWidth}, 0)`)
+			.call(yAxis);
 	});
 
 }
