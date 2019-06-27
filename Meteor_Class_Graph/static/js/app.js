@@ -2,10 +2,10 @@
 dataLocation = "static/data/Clean_Meteor_Class_Data.csv"
 
 margin = {
-	left: 30,
-	right:10,
+	left: 60,
+	right: 60,
 	top: 10,
-	bottom: 30
+	bottom: 150
 }
 
 svgWidth = 600;
@@ -60,21 +60,26 @@ function graph(error) {
 		/* #endregion */
 
 		var scaleWidth = d3.scaleLinear()
+			.domain([0,subValues.length])
 			.range([0, chartWidth]);
 
 		var xAxis = d3.axisBottom(scaleWidth)
-			.ticks(subValues.forEach(s => {
-				return s;
-			}))
+			.ticks(subValues.length)
 			.tickFormat(function(d) {
-				return subValues[d % 16];
+				return subValues[d];
 			});
+
 		var yAxis = d3.axisLeft(scaleHeight)
 			.tickSize(chartWidth);
 
 		chartGroup.append("g")
 			.attr("transform", `translate(0, ${chartHeight})`)
-			.call(xAxis);
+			.call(xAxis)
+			.selectAll("text")
+				.style("text-anchor", "end")
+				// .attr("dx", "-.8em")
+	   			// .attr("dy", ".15em")
+				.attr("transform", "rotate(-65)");
 
 		chartGroup.append("g")
 			.attr("transform", `translate(${chartWidth}, 0)`)
