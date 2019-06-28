@@ -29,34 +29,40 @@ function graph(error) {
 	d3.csv(dataLocation, function (data) {
 		console.log(data);
 
+		data.forEach( function(d) {
+			d.count_of_class = +d.count_of_class;
+		});
+
 		// get the height and width of the graph
-		var scaleHeight = d3.scaleLinear()
+		var scaleHeight = d3.scaleSqrt()
 			.domain([0, d3.max(data, function (d) {
+				console.log(d.count_of_class);
 				return d.count_of_class; // ******* this is going to need to be changed to fit wit the item info below
 			})])
-			.range([chartHeight, 0]);
-
+			.range([0, chartHeight]);
 
 		/* #region  count the number of items in the selected tier */
 		var items = [];
 
-		current = null;
-		count = 0;
-		subValues = [];
-
 		data.forEach(d => {
 			items.push(d.class_tier_3); // ****** this is going to need to be changed to accecpt variable class tiers
 		});
-
 		items = items.sort();
+		
+		console.log(items);
+
+		current = null;
+		subTotal = [];
+		subValues = [];
 
 		items.forEach(item => {
 			if (item != current) {
-				count += 1;
 				current = item;
 				subValues.push(item);
 			}
 		});
+
+		console.log(subValues);
 		/* #endregion */
 
 		var scaleWidth = d3.scaleLinear()
@@ -77,13 +83,27 @@ function graph(error) {
 			.call(xAxis)
 			.selectAll("text")
 				.style("text-anchor", "end")
-				// .attr("dx", "-.8em")
-	   			// .attr("dy", ".15em")
 				.attr("transform", "rotate(-65)");
 
 		chartGroup.append("g")
 			.attr("transform", `translate(${chartWidth}, 0)`)
 			.call(yAxis);
+		
+		//set bar width
+		barSpacing = chartWidth / subValues.length * .05;
+
+		barWidth = (chartWidth - (barSpacing * (subValues.length - 1))) / subValues.length;
+
+		barGroup = chartGroup.selectAll(".bar")
+			.data(data)
+			.enter()
+			.append("rect")
+			.classed("bar", true)
+			.attr("width", d => barWidth)
+ 		   	.attr("height", d => scaleHeight(d.count_of_class))
+   			.attr("x", (d, i) => i * (barWidth + barSpacing))
+			.attr("y", d => chartHeight - scaleHeight(d.count_of_class));
+
 	});
 
 }
