@@ -1,0 +1,41 @@
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Impact Data</title>
+    <link rel="stylesheet" type="text/css" href="../static/js/style.css">
+  
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script type='text/javascript' src='http://d3js.org/d3.v3.min.js'></script>
+    <script type='text/javascript' src='http://d3js.org/topojson.v1.min.js'></script>
+    <script type='text/javascript' src='{{ url_for('static', filename='world-110m.json') }}'></script>
+    <script type='text/javascript' src='{{ url_for('static', filename='planetary/planetaryjs.min.js') }}'></script>
+    <script type="text/javascript" src="../static/js/moment.js"></script>
+
+  </head>
+  <body>
+
+    <h1 style="color:#FFFFFF">Impact Visualizations: 1970 - 2013</h1>
+    <ul id='magnitudes'>
+      <li style="color: rgb(255,255,255);">Mass: <100g</li>
+      <li style="color: rgb(255,255,0);">Mass: <1000g</li>
+      <li style="color: rgb(255,165,0);">Mass: <3000g</li>
+      <li style="color: rgb(255,0,0);">Mass: <50000g</li>
+      <li style="color: rgb(128,0,128);">Mass: >50000g</li>
+
+    </ul>
+    <canvas id='quakeCanvas'></canvas>
+  
+    <script type="text/javascript" src="../static/js/logic.js"></script>
+    <div id='controls'>
+      <div>
+        <input id='slider' type='range' min='0' max='100' step='0.1' value='0'>
+      </div>
+      <div>
+        <span id='date'></span>&nbsp;
+      </div>
+    </div>
+  </body>
+</html>
