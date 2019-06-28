@@ -7,7 +7,7 @@
   planet.loadPlugin(autocenter({extraHeight: -120}));
   planet.loadPlugin(autoscale({extraHeight: -120}));
   planet.loadPlugin(planetaryjs.plugins.earth({
-    topojson: { file:   '/world-110m.json' },
+    topojson: { file:   '../static/world-110m.json' },
     oceans:   { fill:   '#001320' },
     land:     { fill:   '#06304e' },
     borders:  { stroke: '#001320' }
@@ -51,7 +51,7 @@
     .range([2000, 5000]);
 
 
-d3.json('Clean_Meteor_Data_NoArctic.json', function(err, data) {
+d3.json('../static/Clean_Meteor_Data_NoArctic.json', function(err, data) {
     if (err) {
       alert("Problem loading the impact data.");
       return;
@@ -83,7 +83,7 @@ d3.json('Clean_Meteor_Data_NoArctic.json', function(err, data) {
       }
 
     }
-      , 40);
+      , 60);
 
     var updateDate = function() {
       d3.select('#date').text("Year: " + moment(data["year"][index]).format("YYYY"));
