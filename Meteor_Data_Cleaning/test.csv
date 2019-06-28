@@ -1,0 +1,423 @@
+recclass,count_of_class
+Acapulcoite,37
+Acapulcoite/Lodranite,5
+Acapulcoite/lodranite,1
+Achondrite-prim,3
+Achondrite-ung,36
+Angrite,10
+Aubrite,53
+Aubrite-an,5
+Brachinite,23
+C,8
+C1/2-ung,1
+C2,1
+C2-ung,13
+C3-ung,10
+C3.0-ung,1
+C4,2
+C4-ung,3
+C4/5,1
+C5/6-ung,1
+C6,2
+CB,6
+CBa,4
+CBb,4
+CH/CBb,1
+CH3,19
+CI1,7
+CK,1
+CK3,7
+CK3-an,2
+CK4,54
+CK4-an,3
+CK4/5,8
+CK5,75
+CK5/6,3
+CK6,13
+CM,3
+CM-an,2
+CM1,12
+CM1/2,13
+CM2,330
+CO3,308
+CO3.0,3
+CO3.1,3
+CO3.2,4
+CO3.3,4
+CO3.4,3
+CO3.5,7
+CO3.6,6
+CO3.7,1
+CO3.8,2
+CR,7
+CR-an,1
+CR1,2
+CR2,116
+CR2-an,1
+CR7,1
+CV2,1
+CV3,184
+CV3-an,3
+Chondrite-fusion crust,2
+Chondrite-ung,9
+Diogenite,178
+Diogenite-an,2
+Diogenite-olivine,7
+Diogenite-pm,7
+E,4
+E-an,5
+E3,205
+E3-an,6
+E4,4
+E5,5
+E5-an,1
+E6,4
+EH,1
+EH-imp melt,6
+EH3,67
+EH3/4-an,1
+EH4,17
+EH4/5,9
+EH5,6
+EH6,3
+EH6-an,1
+EH7,1
+EH7-an,1
+EL-melt rock,2
+EL3,17
+EL4,11
+EL4/5,1
+EL5,4
+EL6,56
+EL6/7,1
+EL7,1
+Enst achon-ung,2
+Eucrite,115
+Eucrite-Mg rich,4
+Eucrite-an,1
+Eucrite-br,63
+Eucrite-cm,20
+Eucrite-mmict,84
+Eucrite-pmict,169
+Eucrite-unbr,29
+Fusion crust,1
+H,69
+H(5?),2
+H(?)4,1
+H(L)3,1
+H(L)3-an,1
+H-an,4
+H-imp melt,4
+H-melt breccia,4
+H-melt rock,5
+H-metal,5
+H/L3,1
+H/L3.5,1
+H/L3.6,1
+H/L3.9,1
+H/L4,10
+H/L4-5,1
+H/L5,5
+H/L6,6
+H/L~4,1
+H3,313
+H3 ,1
+H3-4,8
+H3-5,32
+H3-6,40
+H3-an,1
+H3.0,3
+H3.0-3.4,1
+H3.05,2
+H3.1,2
+H3.10,2
+H3.2,2
+H3.2-3.7,1
+H3.2-6,1
+H3.2-an,3
+H3.3,7
+H3.4,16
+H3.4-5,1
+H3.4/3.5,1
+H3.5,17
+H3.5-4,1
+H3.6,41
+H3.6-6,2
+H3.7,70
+H3.7-5,2
+H3.7-6,1
+H3.7/3.8,1
+H3.8,56
+H3.8-4,1
+H3.8-5,1
+H3.8-6,1
+H3.8-an,2
+H3.8/3.9,1
+H3.8/4,2
+H3.9,36
+H3.9-5,2
+H3.9-6,4
+H3.9/4,4
+H3/4,30
+H4,3880
+H4 ,11
+H4(?),1
+H4-5,45
+H4-6,57
+H4-an,10
+H4-melt breccia,1
+H4/5,395
+H4/6,6
+H5,6243
+H5 ,21
+H5-6,58
+H5-7,1
+H5-an,2
+H5-melt breccia,3
+H5/6,166
+H6,3898
+H6 ,1
+H6-melt breccia,3
+H7,8
+H?,2
+Howardite,179
+Howardite-an,1
+H~4,17
+H~4/5,2
+H~5,106
+H~6,19
+Iron,71
+"Iron, IAB complex",44
+"Iron, IAB-MG",79
+"Iron, IAB-an",3
+"Iron, IAB-sHH",5
+"Iron, IAB-sHL",16
+"Iron, IAB-sHL-an",1
+"Iron, IAB-sLH",9
+"Iron, IAB-sLL",25
+"Iron, IAB-sLM",10
+"Iron, IAB-ung",43
+"Iron, IAB?",4
+"Iron, IC",10
+"Iron, IC-an",2
+"Iron, IIAB",111
+"Iron, IIAB-an",1
+"Iron, IIC",7
+"Iron, IID",19
+"Iron, IID-an",1
+"Iron, IIE",11
+"Iron, IIE-an",7
+"Iron, IIF",6
+"Iron, IIG",6
+"Iron, IIIAB",270
+"Iron, IIIAB-an",3
+"Iron, IIIAB?",4
+"Iron, IIIE",13
+"Iron, IIIE-an",1
+"Iron, IIIF",9
+"Iron, IVA",63
+"Iron, IVA-an",5
+"Iron, IVB",14
+"Iron, ungrouped",105
+K,1
+K3,2
+L,43
+L(?)3,2
+L(LL)3,3
+L(LL)3.05,2
+L(LL)3.5-3.7,1
+L(LL)5,1
+L(LL)6,1
+L-imp melt,11
+L-melt breccia,14
+L-melt rock,11
+L-metal,2
+L/LL,1
+L/LL(?)3,1
+L/LL3,21
+L/LL3-5,3
+L/LL3-6,1
+L/LL3.10,1
+L/LL3.2,1
+L/LL3.4,3
+L/LL3.6/3.7,1
+L/LL4,18
+L/LL4-6,1
+L/LL4/5,1
+L/LL5,13
+L/LL5-6,1
+L/LL5/6,1
+L/LL6,22
+L/LL6-an,1
+L/LL~4,1
+L/LL~5,2
+L/LL~6,2
+L3,268
+L3-4,2
+L3-5,9
+L3-6,14
+L3-melt breccia,1
+L3.0,2
+L3.0-3.7,1
+L3.0-3.9,1
+L3.00,1
+L3.05,2
+L3.1,12
+L3.10,1
+L3.2,12
+L3.2-3.5,1
+L3.2-3.6,1
+L3.3,14
+L3.3-3.5,1
+L3.3-3.6,1
+L3.3-3.7,1
+L3.4,50
+L3.4-3.7,1
+L3.5,84
+L3.5-3.7,1
+L3.5-3.8,1
+L3.5-3.9,1
+L3.5-5,1
+L3.6,45
+L3.6-4,1
+L3.7,43
+L3.7-3.9,1
+L3.7-4,1
+L3.7-6,1
+L3.7/3.8,1
+L3.8,45
+L3.8-6,1
+L3.8-an,1
+L3.9,21
+L3.9-5,1
+L3.9-6,1
+L3.9/4,1
+L3/4,7
+L4,939
+L4 ,2
+L4-5,16
+L4-6,18
+L4-an,1
+L4-melt breccia,1
+L4/5,47
+L5,3264
+L5 ,21
+L5-6,33
+L5-7,1
+L5-melt breccia,3
+L5/6,78
+L6,7519
+L6 ,54
+L6-melt breccia,8
+L6/7,9
+L7,20
+LL,223
+LL(L)3,2
+LL-imp melt,2
+LL-melt breccia,54
+LL-melt rock,4
+LL3,88
+LL3-5,1
+LL3-6,9
+LL3.0,3
+LL3.00,1
+LL3.05,1
+LL3.1,2
+LL3.1-3.5,1
+LL3.15,3
+LL3.2,11
+LL3.3,13
+LL3.4,19
+LL3.5,10
+LL3.6,12
+LL3.7,16
+LL3.7-6,1
+LL3.8,20
+LL3.8-4,1
+LL3.8-6,2
+LL3.9,9
+LL3.9/4,1
+LL3/4,1
+LL4,198
+LL4-5,6
+LL4-6,25
+LL4/5,3
+LL5,2199
+LL5-6,34
+LL5-7,1
+LL5/6,39
+LL6,1660
+LL6 ,1
+LL6(?),1
+LL6-an,1
+LL6-melt breccia,2
+LL7,19
+LL7(?),1
+LL~3,3
+LL~5,9
+LL~6,5
+Lodranite,29
+Lodranite-an,1
+Lunar,16
+Lunar (anorth),62
+Lunar (bas. breccia),1
+Lunar (bas/anor),2
+Lunar (basalt),13
+Lunar (feldsp. breccia),25
+Lunar (gabbro),5
+Lunar (norite),1
+L~3,1
+L~4,6
+L~4-6,1
+L~5,28
+L~6,85
+Martian (OPX),1
+Martian (basaltic breccia),2
+Martian (chassignite),1
+Martian (nakhlite),12
+Martian (shergottite),58
+Mesosiderite,107
+Mesosiderite-A,2
+Mesosiderite-A1,6
+Mesosiderite-A2,1
+Mesosiderite-A3,3
+Mesosiderite-A3/4,1
+Mesosiderite-A4,3
+Mesosiderite-B,1
+Mesosiderite-B1,4
+Mesosiderite-B2,3
+Mesosiderite-B4,3
+Mesosiderite-C,1
+Mesosiderite-C2,2
+Mesosiderite-an,6
+Mesosiderite?,1
+OC,69
+Pallasite,16
+"Pallasite, PES",3
+"Pallasite, PMG",35
+"Pallasite, PMG-an",11
+"Pallasite, ungrouped",4
+Pallasite?,1
+R,1
+R3,9
+R3-4,1
+R3-5,2
+R3-6,4
+R3.5-4,1
+R3.5-6,1
+R3.6,2
+R3.8,4
+R3.8-5,1
+R3.8-6,3
+R3.9,1
+R4,16
+R5,14
+R6,3
+Relict OC,17
+Relict iron,1
+Stone-uncl,29
+Stone-ung,1
+Ureilite,214
+Ureilite-an,3
+Ureilite-pmict,18
+Winonaite,18
