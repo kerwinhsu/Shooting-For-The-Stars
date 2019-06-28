@@ -1,9 +1,14 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
+	padding: 0;
+	margin: 0;
 }
 
-.bar {
-    fill: green;
-  }
+/* .bar {
+	fill: green;
+} */
+
+.legend rect {
+	fill:white;
+	stroke:black;
+	opacity:0.8;}
