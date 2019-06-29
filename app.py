@@ -57,6 +57,10 @@ def names():
 def globe():
     return render_template("form.html")
 
+@app.route("/graph")
+def globe():
+    return render_template("form2.html")
+
 
 
 if __name__ == "__main__":
